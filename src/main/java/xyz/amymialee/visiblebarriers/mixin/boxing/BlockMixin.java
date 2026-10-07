@@ -13,9 +13,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class BlockMixin extends AbstractBlockMixin {
     @Shadow public abstract BlockState defaultBlockState();
 
-    @Inject(method = "skipRendering", at = @At("HEAD"), cancellable = true)
-    public void visibleBarriers$isTranslucent(BlockState state, net.minecraft.core.Direction direction, CallbackInfoReturnable<Boolean> cir) {}
-
     @Inject(method = "getStateForPlacement", at = @At("HEAD"), cancellable = true)
     public void visibleBarriers$getPlacementState(BlockPlaceContext ctx, CallbackInfoReturnable<BlockState> cir) {}
 }
