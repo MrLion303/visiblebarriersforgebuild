@@ -5,8 +5,7 @@ import net.minecraft.client.renderer.entity.ItemRenderer;
 import net.minecraft.client.resources.model.BakedModel;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import com.mojang.blaze3d.vertex.PoseStack;
-import net.minecraft.client.renderer.block.model.ItemTransforms;
-import net.minecraft.world.entity.Entity;
+import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 import com.mojang.math.Axis;
 
@@ -20,7 +19,7 @@ public class FloatyRenderer<T extends Entity> {
         BakedModel model = renderer.getModel(stack, entity.level(), null, entity.getId());
         matrices.translate(0.0D, entity.getBbHeight() / 2.0D, 0.0D);
         matrices.mulPose(Axis.YP.rotation(-((entity.tickCount + partialTick) * 8) / 20.0f));
-        renderer.render(stack, ItemTransforms.TransformType.GROUND, false, matrices, consumers, light, OverlayTexture.NO_OVERLAY, model);
+        renderer.render(stack, ItemDisplayContext.GROUND, false, matrices, consumers, light, OverlayTexture.NO_OVERLAY, model);
         matrices.popPose();
     }
     public ItemStack getItem(){return stack;}
