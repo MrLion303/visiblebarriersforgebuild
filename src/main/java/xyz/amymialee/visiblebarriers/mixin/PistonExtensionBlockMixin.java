@@ -29,14 +29,6 @@ public abstract class PistonExtensionBlockMixin extends BlockMixin {
         cir.setReturnValue(defaultBlockState().setValue(PistonHeadBlock.FACING, ctx.getNearestLookingDirection().getOpposite()));
     }
 
-    @Inject(method = "use", at = @At("HEAD"), cancellable = true)
-    public void visibleBarriers$onUse(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit, CallbackInfoReturnable<InteractionResult> cir) {
-        if (player.getItemInHand(hand).is(VisibleBarriersCommon.MOVING_PISTON_BLOCK_ITEM.get()) && state.hasProperty(PistonHeadBlock.TYPE)) {
-            level.setBlock(pos, state.setValue(PistonHeadBlock.TYPE, state.getValue(PistonHeadBlock.TYPE) == PistonType.DEFAULT ? PistonType.STICKY : PistonType.DEFAULT), Block.UPDATE_CLIENTS);
-            cir.setReturnValue(InteractionResult.SUCCESS);
-        }
-    }
-
     @Inject(method = "getCloneItemStack", at = @At("HEAD"), cancellable = true)
     public void visibleBarriers$pickStack(BlockState state, BlockGetter world, BlockPos pos, CallbackInfoReturnable<ItemStack> cir) {
         ItemStack stack = new ItemStack(VisibleBarriersCommon.MOVING_PISTON_BLOCK_ITEM.get());
