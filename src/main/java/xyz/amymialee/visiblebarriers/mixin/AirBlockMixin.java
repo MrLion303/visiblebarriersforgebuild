@@ -1,9 +1,7 @@
 package xyz.amymialee.visiblebarriers.mixin;
 
 import net.minecraft.world.level.block.AirBlock;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -18,16 +16,6 @@ import xyz.amymialee.visiblebarriers.mixin.boxing.BlockMixin;
 
 @Mixin(AirBlock.class)
 public abstract class AirBlockMixin extends BlockMixin {
-    @Override
-    public void visibleBarriers$isSideInvisible(BlockState state, net.minecraft.core.Direction direction, CallbackInfoReturnable<Boolean> cir) {
-        cir.setReturnValue(true);
-    }
-
-    @Override
-    public void visibleBarriers$isTranslucent(BlockState state, net.minecraft.core.Direction direction, CallbackInfoReturnable<Boolean> cir) {
-        cir.setReturnValue(true);
-    }
-
     @Inject(method = "getShape", at = @At("HEAD"), cancellable = true)
     public void visibleBarriers$visibleOutlineShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context, CallbackInfoReturnable<VoxelShape> cir) {
         if ((this.asItem() != Items.AIR && context.isHoldingItem(this.asItem())) || context == CollisionContext.empty()) {
