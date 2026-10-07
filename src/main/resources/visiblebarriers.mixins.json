@@ -1,0 +1,38 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "xyz.amymialee.visiblebarriers.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "visiblebarriers.refmap.json",
+  "mixins": [
+    "AirBlockMixin",
+    "BubbleColumnBlockMixin",
+    "EntityTypeMixin",
+    "MarkerEntityMixin",
+    "PistonExtensionBlockMixin",
+    "boxing.AbstractBlockMixin",
+    "boxing.BlockMixin",
+    "boxing.WorldMixin"
+  ],
+  "client": [
+    "boxing.EntityRendererMixin",
+    "client.AbstractBlockStateMixin",
+    "client.ClientBubbleColumnBlockMixin",
+    "client.ClientPistonExtensionBlockMixin",
+    "client.ClientPlayerInteractionManagerMixin",
+    "client.ClientWorldMixin",
+    "client.DisplayContextMixin",
+    "client.EmptyEntityRendererMixin",
+    "client.EntityMixin",
+    "client.GameRendererMixin",
+    "client.ItemStackMixin",
+    "client.LightBlockMixin",
+    "client.LightmapTextureManagerMixin",
+    "client.MinecraftClientMixin",
+    "client.MouseMixin",
+    "client.ParticleManagerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
