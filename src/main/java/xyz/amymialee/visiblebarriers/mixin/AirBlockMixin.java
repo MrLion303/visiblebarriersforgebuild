@@ -30,7 +30,7 @@ public abstract class AirBlockMixin extends BlockMixin {
 
     @Inject(method = "getShape", at = @At("HEAD"), cancellable = true)
     public void visibleBarriers$visibleOutlineShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context, CallbackInfoReturnable<VoxelShape> cir) {
-        if (this.asItem() != Items.AIR && context.isHolding(this.asItem()) || context == CollisionContext.empty()) {
+        if ((this.asItem() != Items.AIR && context.isHoldingItem(this.asItem())) || context == CollisionContext.empty()) {
             cir.setReturnValue(Shapes.block());
         }
     }
