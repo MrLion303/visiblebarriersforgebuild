@@ -10,7 +10,7 @@ import xyz.amymialee.visiblebarriers.VisibleConfig;
 @Mixin(Minecraft.class)
 public class MinecraftClientMixin {
     @Redirect(
-        method = "continueAttack",
+        method = "handleBlockBreaking",
         at = @At(
             value = "INVOKE",
             target = "Lnet/minecraft/world/level/block/state/BlockBehaviour$BlockStateBase;isAir()Z"
