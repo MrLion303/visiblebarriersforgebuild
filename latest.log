@@ -1,0 +1,644 @@
+[16:23:44] [main/INFO]: ModLauncher running: args [--username, LAYONv, --version, 1.20.1, --gameDir, C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME, --assetsDir, C:\Users\rodri\AppData\Roaming\ModrinthApp\meta\assets, --assetIndex, 5, --uuid, bef90cd7ba6d491b8900ccdbfcc79b3e, --accessToken, ????????, --clientId, c4502edb-87c6-40cb-b595-64a280cf8906, --xuid, 0, --userType, msa, --versionType, release, --width, 854, --height, 480, --launchTarget, forgeclient, --fml.forgeVersion, 47.4.18, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
+[16:23:44] [main/INFO]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.13 by Azul Systems, Inc.; OS Windows 10 arch amd64 version 10.0
+[16:23:48] [main/INFO]: Loading ImmediateWindowProvider fmlearlywindow
+[16:23:48] [main/INFO]: Trying GL version 4.6
+[16:23:48] [main/INFO]: Trying GL version 4.5
+[16:23:48] [main/INFO]: Trying GL version 4.4
+[16:23:48] [main/INFO]: Requested GL version 4.4 got version 4.4
+[16:23:48] [main/INFO]: Mixin Transmogrifier is definitely up to no good...
+[16:23:49] [main/INFO]: crimes against java were committed
+[16:23:49] [main/INFO]: Original mixin transformation service successfully crobbed by mixin-transmogrifier!
+[16:23:49] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/rodri/AppData/Roaming/ModrinthApp/profiles/OV_GAME/mods/Connector-1.0.0-beta.49+1.20.1.jar%23302%23305!/ Service=ModLauncher Env=CLIENT
+[16:23:49] [pool-2-thread-1/INFO]: GL info: Intel(R) HD Graphics 5500 GL version 4.4.0 - Build 20.19.15.5144, Intel
+[16:23:49] [main/INFO]: Found mod file Connector-1.0.0-beta.49+1.20.1-mod.jar of type MOD with provider org.sinytra.connector.locator.ConnectorEarlyLocator@34523d46
+[16:23:51] [main/INFO]: Found mod file advancednetherite-forge-2.1.3-1.20.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file AdvancementPlaques-1.20.1-forge-1.6.9.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file alexsmobs-1.22.9.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file AmbientSounds_FORGE_v6.3.9_mc1.20.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file amendments-1.20-2.2.6.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file appleskin-forge-mc1.20.1-2.5.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file architectury-9.2.14-forge.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file areaeffectcloud3d-1.0.4.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file artifacts-forge-9.5.19.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file AssetsLoaderMod-forge-1.20.1-47.4.18.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file ATi Structures Vanilla V1.4.7.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file BadOptimizations-2.4.1-1.20.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file balm-forge-1.20.1-7.3.44.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file BetterAdvancements-Forge-1.20.1-0.6.0.73.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file BetterTotemOfUndying-Forge-1.20.1-1.0.4.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file BetterTridents-v8.0.1-1.20.1-Forge.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file bettervillage-forge-1.20.1-3.3.1-all.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file BiomesOPlenty-forge-1.20.1-19.0.0.96.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file blueprint-1.20.1-7.1.5.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file Bookshelf-Forge-1.20.1-20.2.15.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file Boss Music Mod 1.20.x v1.2.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file brutalbosses-1.20.1-8.4.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file CatoAPI-Forge-1.20.1-1.5-beta.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file celestial_core-1.5.8.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file celestial_enchantments-1.3.7.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file CerbonsAPI-Forge-1.20.1-1.1.0.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file chat_heads-0.15.7-forge-1.20.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file citadel-2.6.3-1.20.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file cloth-config-11.1.136-forge.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file Clumps-forge-1.20.1-12.0.0.4.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file common-networking-forge-1.0.6-1.20.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file ConfigAPI-Universal-1.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file Controlling-forge-1.20.1-12.0.2.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file Corgilib-Forge-1.20.1-4.0.3.5.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file CraterLib-Forge-1.20-3.1.3.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file CreativeCore_FORGE_v2.12.40_mc1.20.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file cupboard-1.20.1-2.7.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file curios-forge-5.14.1+1.20.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file CustomPlayerModels-1.20-0.6.27a.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file CustomSkyMod-1.20.1-forge.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file decorative_blocks-forge-1.20.1-4.1.3.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file do_a_barrel_roll-forge-3.5.6+1.20.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file Dungeon Crawl-1.20.1-2.3.15.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file dungeons_enhanced-1.20.1-5.4.3.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file EasyShulkerBoxes-v8.0.2-1.20.1-Forge.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file embeddium-0.3.31+mc1.20.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file emberstextapi-forge-1.20.1-3.0.4-all.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file emotecraft-for-MC1.20.1-2.2.7-b.build.50-forge.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file EnchantmentDescriptions-Forge-1.20.1-17.1.21.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file endrem_forge-5.3.3-R-1.20.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file entity_model_features-3.3.11-1.20.1-forge.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file entity_texture_features-7.2.5-1.20.1-forge.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file entityculling-forge-1.10.5-mc1.20.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file epic-knights-1.20.1-forge-10.11.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file explosiveenhancement-1.2.0.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file fabric-api-0.92.6+1.11.15+1.20.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file fancymenu_forge_3.9.0_MC_1.20.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file Fastload-Reforged-mc1.20.1-3.4.0.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file ferritecore-6.0.1-forge.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file framework-forge-1.20.1-0.7.15.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file geckolib-forge-1.20.1-4.8.4.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file GlitchCore-forge-1.20.1-0.0.1.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file hidehud-forge-1.20.1-1.0.0.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file Iceberg-1.20.1-forge-1.1.25.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file IllagerInvasion-v8.0.7-1.20.1-Forge.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file ImmediatelyFast-Forge-1.5.5+1.20.4.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file insanelib-1.23.4.6.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file jei-1.20.1-forge-15.56.0.205.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file JustEnoughResources-1.20.1-1.4.0.247.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file justzoom_forge_3.0.1_MC_1.20.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file KeybindHider-Forge-1.20.1-1.3.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file konkrete_forge_1.8.0_MC_1.20-1.20.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file LegendaryTooltips-1.20.1-forge-1.4.5.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file libraryferret-forge-1.20.1-4.0.0.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file lithostitched-forge-1.20.1-1.4.11.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file MaintenanceMode-Universal-1.3.4.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file mcw-bridges-3.1.2-mc1.20.1forge.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file mcw-furniture-3.4.1-mc1.20.1forge.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file mcw-lights-1.1.5-mc1.20.1forge.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file mcw-mcwfences-1.2.1-mc1.20.1forge.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file melody_forge_1.0.3_MC_1.20.1-1.20.4.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file memoryleakfix-forge-1.17+-1.1.5.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file modernfix-forge-5.27.83+mc1.20.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file moonlight-1.20-2.16.35-forge.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file MoreVanillaArmor-1.20.1-5.1.2.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file naturalist-5.0pre5+forge-1.20.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file negativeutils-1.0.3.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file NoChatReports-FORGE-1.20.1-v2.2.3.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file noisium-forge-2.3.0+mc1.20-1.20.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file notenoughanimations-forge-1.12.6-mc1.20.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file nyfsspiders-Forge-1.20.1-3.0.2.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file oculus-mc1.20.1-1.8.0.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file Oh-The-Biomes-Weve-Gone-Forge-1.8.0.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file Oh-The-Trees-Youll-Grow-forge-1.20.1-1.7.0.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file packetfixer-3.3.2-1.18-1.20.4-merged.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file Paraglider-forge-20.1.3.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file ParCool-1.20.1-3.4.3.3.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file particlepathmod-1.0.0.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file particlerain-4.0.0-beta.11+1.20.1-forge.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file particular-1.20.1-Forge-1.5.7.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file Patchouli-1.20.1-85-FORGE.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file Pehkui-3.8.2+1.20.1-forge.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file Platform-forge-1.20.1-1.3.4.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file player-animation-lib-forge-1.0.2-rc1+1.20.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file PlayerRevive_FORGE_v2.0.31_mc1.20.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file PlayerScreenEvent-1.20.1-1.0.0.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file Prism-1.20.1-forge-1.0.5.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file progressivebosses-4.3.12.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file PuzzlesLib-v8.1.33-1.20.1-Forge.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file Quark-4.0-462.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file resourcefulconfig-forge-1.20.1-2.1.3.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file rhino-forge-2001.2.3-build.10.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file rottencreatures-forge-1.20.1-1.1.0.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file screentext-forge-1.20.1-v4.5.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file Searchables-forge-1.20.1-1.0.3.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file ShaderMod-1.1.2.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file skinrestorer-2.11.0+1.20-forge.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file sound-physics-remastered-forge-1.20.1-1.5.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file SpartanShields-1.20.1-forge-3.1.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file spiffyhud_forge_3.1.2_MC_1.20.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file structure_gel-1.20.1-2.16.2.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file SubtitleMod-Forge-1.20.1-1.3.3.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file takesapillage-1.0.3-1.20.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file TerraBlender-forge-1.20.1-3.0.1.10.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file tidal-towns-1.3.4.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file trashslot-forge-1.20.1-15.1.5.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file travelersbackpack-forge-1.20.1-9.1.57.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file tru.e-ending-v1.1.0c.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file unusualend-2.3.1.2.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file visible-barriers-forge-2.0.9-forge.1.20.1.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file visuality-forge-2.2.0.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file voicechat-forge-1.20.1-2.6.22.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file watermedia-2.1.37.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file watermedia_binaries-3.0.0-rc.4.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file watervision-FG-mc1.20.1-v0.1.0-alpha.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file Waves-1.20.1-1.6a.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file waystones-forge-1.20.1-14.1.21.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file xaerominimap-forge-1.20.1-26.5.0.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file xaeroworldmap-forge-1.20.1-1.46.0.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:51] [main/INFO]: Found mod file Zeta-1.0-31.jar of type MOD with provider {mods folder locator at C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME\mods}
+[16:23:52] [main/WARN]: Mod file C:\Users\rodri\AppData\Roaming\ModrinthApp\meta\libraries\net\minecraftforge\fmlcore\1.20.1-47.4.18\fmlcore-1.20.1-47.4.18.jar is missing mods.toml file
+[16:23:52] [main/WARN]: Mod file C:\Users\rodri\AppData\Roaming\ModrinthApp\meta\libraries\net\minecraftforge\javafmllanguage\1.20.1-47.4.18\javafmllanguage-1.20.1-47.4.18.jar is missing mods.toml file
+[16:23:52] [main/WARN]: Mod file C:\Users\rodri\AppData\Roaming\ModrinthApp\meta\libraries\net\minecraftforge\lowcodelanguage\1.20.1-47.4.18\lowcodelanguage-1.20.1-47.4.18.jar is missing mods.toml file
+[16:23:52] [main/WARN]: Mod file C:\Users\rodri\AppData\Roaming\ModrinthApp\meta\libraries\net\minecraftforge\mclanguage\1.20.1-47.4.18\mclanguage-1.20.1-47.4.18.jar is missing mods.toml file
+[16:23:52] [main/INFO]: Found mod file fmlcore-1.20.1-47.4.18.jar of type LIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@7207cb51
+[16:23:52] [main/INFO]: Found mod file javafmllanguage-1.20.1-47.4.18.jar of type LANGPROVIDER with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@7207cb51
+[16:23:52] [main/INFO]: Found mod file lowcodelanguage-1.20.1-47.4.18.jar of type LANGPROVIDER with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@7207cb51
+[16:23:52] [main/INFO]: Found mod file mclanguage-1.20.1-47.4.18.jar of type LANGPROVIDER with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@7207cb51
+[16:23:52] [main/INFO]: Found mod file client-1.20.1-20230612.114412-srg.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@7207cb51
+[16:23:52] [main/INFO]: Found mod file forge-1.20.1-47.4.18-universal.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@7207cb51
+[16:23:54] [main/INFO]: Found 73 dependencies adding them to mods collection
+[16:23:54] [main/INFO]: Found mod file fabric-transfer-api-v1-3.3.6+25eff73b77.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-dimensions-v1-2.1.55+8005d10d77.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file kuma-api-forge-20.1.12+1.20.1.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-renderer-api-v1-3.2.2+cf68abbe77.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file puzzlesapi-forge-8.1.6.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file l2tabs-0.3.1.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-item-api-v1-2.1.29+4d0bbcfa77.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file mixinextras-forge-0.5.4.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-model-loading-api-v1-1.0.4+6274ab9d77.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-rendering-fluids-v1-3.0.29+4ac5e37a77.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file xaerolib-forge-1.20.1-1.7.3.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-screen-handler-api-v1-1.3.33+561530ec77.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-models-v0-0.4.3+7c3892a477.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-resource-loader-v0-0.11.12+4b4151c077.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file mclib-20.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file TRender-1.0.17-1.20.1-forge-SNAPSHOT.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-rendering-v1-3.0.9+66e9a48f77.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-renderer-indigo-1.5.3+b5b2da4177.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-convention-tags-v1-1.5.6+fa3d1c0177.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-mining-level-api-v1-2.1.52+561530ec77.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-command-api-v1-1.2.35+f71b366f77.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-block-view-api-v2-1.0.3+53347ba977.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-command-api-v2-2.2.14+561530ec77.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file MixinSquared-0.1.1.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-data-attachment-api-v1-1.0.2+30ef839e77.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file l2screentracker-0.1.4.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file mixinextras-forge-0.2.0-beta.8.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file midnightlib-1.4.2-forge.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-screen-api-v1-2.0.9+45a670a577.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file animated-gif-lib-for-java-animated-gif-lib-1.7.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file MixinExtras-0.5.4.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-particles-v1-1.1.3+78e1ecb877.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file puzzlesaccessapi-forge-20.1.1.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file l2damagetracker-0.3.8.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-content-registries-v0-4.0.13+a670df1e77.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file capabilitysyncer-1.20.1-4.0.1.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-transitive-access-wideners-v1-4.3.2+1880499877.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-game-rule-api-v1-1.0.41+683d4da877.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-api-base-0.4.32+ef105b4977.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file runtime-1.0.0+1.20.1.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-api-lookup-api-v1-1.6.37+67f9824077.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-blockrenderlayer-v1-1.1.42+1d0da21e77.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file mixinsquared-forge-0.1.1.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file awcapi-neoforge-1.20.1-1.0.3.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file Registrate-MC1.20-1.3.11.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-block-api-v1-1.0.12+0e6cb7f777.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-resource-conditions-api-v1-2.3.9+996d00b277.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file Connector-1.0.0-beta.49+1.20.1-fabricloader.jar of type LIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file java-client-3.4.0.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-item-group-api-v1-4.0.14+c9161c2d77.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file jcpp-1.4.14.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-biome-api-v1-13.0.14+dc36698e77.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-entity-events-v1-1.6.1+4ca7515277.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-registry-sync-v0-2.3.6+1c0ea72177.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-recipe-api-v1-1.0.24+514a076577.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-loot-api-v2-1.2.3+eb28f93e77.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-object-builder-api-v1-11.1.5+f8c414ce77.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file Reflect-1.6.2.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file TRansition-1.0.25-1.20.1-forge-SNAPSHOT.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-rendering-data-attachment-v1-0.3.39+a6081afc77.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file l2itemselector-0.1.7.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file l2serial-1.2.2.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-networking-api-v1-1.3.14+fb7c822677.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file l2library-2.4.23-slim.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-sound-api-v1-1.0.14+4f23bd8477.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-message-api-v1-5.1.10+52cc178c77.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file expandability-forge-9.0.4.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-lifecycle-events-v1-2.2.23+afab492177.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-data-generation-api-v1-12.3.7+369cb3a477.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-events-interaction-v0-0.6.5+0f26153f77.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-key-binding-api-v1-1.0.38+561530ec77.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file japng-0.5.3.jar of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:23:54] [main/INFO]: Found mod file fabric-client-tags-api-v1-1.1.3+5d6761b877.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@5349b246
+[16:24:00] [main/INFO]: Dependency resolution found 4 candidates to load
+[16:24:03] [main/INFO]: Found mod file sushi_bar-0.2.2+1.20$mixinconstraints-1.0.1_mapped_srg_1.20.1.jar of type MOD with provider org.sinytra.connector.locator.ConnectorLocator@5d5c41e5
+[16:24:03] [main/INFO]: Found mod file modmenu-7.2.2_mapped_srg_1.20.1.jar of type MOD with provider org.sinytra.connector.locator.ConnectorLocator@5d5c41e5
+[16:24:03] [main/INFO]: Found mod file replaymod-1.20.1-2.6.23_mapped_srg_1.20.1.jar of type MOD with provider org.sinytra.connector.locator.ConnectorLocator@5d5c41e5
+[16:24:03] [main/INFO]: Found mod file sushi_bar-0.2.2+1.20_mapped_srg_1.20.1.jar of type MOD with provider org.sinytra.connector.locator.ConnectorLocator@5d5c41e5
+[16:24:05] [main/INFO]: Successfully made module authlib transformable
+[16:24:14] [main/INFO]: Compatibility level set to JAVA_17
+[16:24:16] [main/INFO]: Successfully loaded Mixin Connector [com.sonicether.soundphysics.MixinConnector]
+[16:24:17] [main/INFO]: Launching target 'forgeclient' with arguments [--version, 1.20.1, --gameDir, C:\Users\rodri\AppData\Roaming\ModrinthApp\profiles\OV_GAME, --assetsDir, C:\Users\rodri\AppData\Roaming\ModrinthApp\meta\assets, --uuid, bef90cd7ba6d491b8900ccdbfcc79b3e, --username, LAYONv, --assetIndex, 5, --accessToken, ????????, --clientId, c4502edb-87c6-40cb-b595-64a280cf8906, --xuid, 0, --userType, msa, --versionType, release, --width, 854, --height, 480]
+[16:24:18] [main/INFO]: Loaded configuration file for ModernFix 5.27.83+mc1.20.1: 110 options available, 0 override(s) found
+[16:24:18] [main/INFO]: Applying Nashorn fix
+[16:24:18] [main/INFO]: Applied Forge config corruption patch
+[16:24:18] [main/INFO]: Configuring Minecraft's max.bg.threads option with 1 threads
+[16:24:18] [main/WARN]: Reference map '' for chat_heads.forge.mixins.json could not be read. If this is a development environment you can ignore this message
+[16:24:18] [main/INFO]: Loaded configuration file for Embeddium: 251 options available, 3 override(s) found
+[16:24:18] [main/INFO]: Searching for graphics cards...
+[16:24:19] [main/INFO]: Found graphics card: GraphicsAdapterInfo[vendor=INTEL, name=Intel(R) HD Graphics 5500, version=DriverVersion=20.19.15.5144]
+[16:24:20] [main/WARN]: Reference map 'puzzlesaccessapi.common.refmap.json' for puzzlesaccessapi.common.mixins.json could not be read. If this is a development environment you can ignore this message
+[16:24:20] [main/INFO]: Loading 205 mods:
+	- advancednetherite 2.1.3
+	- advancementplaques 1.6.9
+	- alexsmobs 1.22.9
+	- ambientsounds 6.3.9
+	- amendments 1.20-2.2.6
+	- appleskin 2.5.1+mc1.20.1
+	- architectury 9.2.14
+	- areaeffectcloud3d 1.0.4
+	- artifacts 9.5.19
+		\-- expandability 9.0.4
+	- assetsloadermod 1.0.0+mc1.20.1-forge
+	- badoptimizations 2.4.1
+	- balm 7.3.44
+		\-- kuma_api 20.1.12
+	- better_totem_of_undying 1.0.4
+	- betteradvancements 0.6.0.73
+	- bettertridents 8.0.1
+	- bettervillage 3.3.1
+	- biomesoplenty 19.0.0.96
+	- biomeswevegone 1.8.0
+	- blueprint 7.1.5
+	- bookshelf 20.2.15
+	- boss_music_mod 1.2.0
+	- brutalbosses 1.20.1-8.4
+	- catoapi 1.5-beta
+	- celestial_core 1.5.8
+		|-- l2damagetracker 0.3.8
+		|-- l2itemselector 0.1.7
+		|-- l2library 2.4.23
+		|-- l2screentracker 0.1.4
+		\-- l2tabs 0.3.1
+	- celestial_enchantments 1.3.7
+	- cerbons_api 1.1.0
+	- chat_heads 0.15.7
+	- citadel 2.6.3
+	- cloth_config 11.1.136
+	- clumps 12.0.0.4
+	- com_moulberry_mixinconstraints 1.0.1
+	- commonnetworking 1.0.6-1.20.1
+	- configapi 1.1
+	- connectormod 1.0.0-beta.49+1.20.1
+	- controlling 12.0.2
+	- corgilib 4.0.3.5
+	- cpm 0.6.27a
+	- craterlib 3.1.3
+	- creativecore 2.12.40
+	- cupboard 1.20.1-2.7
+	- curios 5.14.1+1.20.1
+	- customskymod 1.0.3
+	- decorative_blocks 4.1.3
+	- do_a_barrel_roll 3.5.6+1.20.1
+	- dungeoncrawl 2.3.15
+	- dungeons_enhanced 5.4.3
+	- easyshulkerboxes 8.0.2
+		\-- puzzlesapi 8.1.6
+	- embeddium 0.3.31+mc1.20.1
+		\-- rubidium 0.7.1
+	- emberstextapi 3.0.4
+	- emotecraft 2.2.7-b.build.50
+	- enchdesc 17.1.21
+	- endrem 5.3.3-R-1.20.1
+	- entity_model_features 3.3.11
+	- entity_texture_features 7.2.5
+	- entityculling 1.10.5
+	- explosiveenhancement 1.2.0
+	- fabric_api 0.92.6+1.11.15+1.20.1
+		|-- fabric_api_base 0.4.32+ef105b4977
+		|-- fabric_api_lookup_api_v1 1.6.37+67f9824077
+		|-- fabric_biome_api_v1 13.0.14+dc36698e77
+		|-- fabric_block_api_v1 1.0.12+0e6cb7f777
+		|-- fabric_block_view_api_v2 1.0.3+53347ba977
+		|-- fabric_blockrenderlayer_v1 1.1.42+1d0da21e77
+		|-- fabric_client_tags_api_v1 1.1.3+5d6761b877
+		|-- fabric_command_api_v1 1.2.35+f71b366f77
+		|-- fabric_command_api_v2 2.2.14+561530ec77
+		|-- fabric_content_registries_v0 4.0.13+a670df1e77
+		|-- fabric_convention_tags_v1 1.5.6+fa3d1c0177
+		|-- fabric_data_attachment_api_v1 1.0.2+30ef839e77
+		|-- fabric_data_generation_api_v1 12.3.7+369cb3a477
+		|-- fabric_dimensions_v1 2.1.55+8005d10d77
+		|-- fabric_entity_events_v1 1.6.1+4ca7515277
+		|-- fabric_events_interaction_v0 0.6.5+0f26153f77
+		|-- fabric_game_rule_api_v1 1.0.41+683d4da877
+		|-- fabric_item_api_v1 2.1.29+4d0bbcfa77
+		|-- fabric_item_group_api_v1 4.0.14+c9161c2d77
+		|-- fabric_key_binding_api_v1 1.0.38+561530ec77
+		|-- fabric_lifecycle_events_v1 2.2.23+afab492177
+		|-- fabric_loot_api_v2 1.2.3+eb28f93e77
+		|-- fabric_message_api_v1 5.1.10+52cc178c77
+		|-- fabric_mining_level_api_v1 2.1.52+561530ec77
+		|-- fabric_model_loading_api_v1 1.0.4+6274ab9d77
+		|-- fabric_models_v0 0.4.3+7c3892a477
+		|-- fabric_networking_api_v1 1.3.14+fb7c822677
+		|-- fabric_object_builder_api_v1 11.1.5+f8c414ce77
+		|-- fabric_particles_v1 1.1.3+78e1ecb877
+		|-- fabric_recipe_api_v1 1.0.24+514a076577
+		|-- fabric_registry_sync_v0 2.3.6+1c0ea72177
+		|-- fabric_renderer_api_v1 3.2.2+cf68abbe77
+		|-- fabric_renderer_indigo 1.5.3+b5b2da4177
+		|-- fabric_rendering_data_attachment_v1 0.3.39+a6081afc77
+		|-- fabric_rendering_fluids_v1 3.0.29+4ac5e37a77
+		|-- fabric_rendering_v1 3.0.9+66e9a48f77
+		|-- fabric_resource_conditions_api_v1 2.3.9+996d00b277
+		|-- fabric_resource_loader_v0 0.11.12+4b4151c077
+		|-- fabric_screen_api_v1 2.0.9+45a670a577
+		|-- fabric_screen_handler_api_v1 1.3.33+561530ec77
+		|-- fabric_sound_api_v1 1.0.14+4f23bd8477
+		|-- fabric_transfer_api_v1 3.3.6+25eff73b77
+		\-- fabric_transitive_access_wideners_v1 4.3.2+1880499877
+	- fancymenu 3.9.0
+	- fastload 3.4.0
+	- ferritecore 6.0.1
+	- forge 47.4.18
+	- framework 0.7.15
+	- geckolib 4.8.4
+	- glitchcore 0.0.1.1
+	- hidehud 1.0.0
+	- iceberg 1.1.25
+	- illagerinvasion 8.0.7
+	- immediatelyfast 1.5.5+1.20.4
+	- insanelib 1.23.4.6
+	- jei 15.56.0.205
+	- jeresources 1.4.0.247
+	- justzoom 3.0.1
+	- keybindhider 1.3.1
+	- konkrete 1.8.0
+	- legendarytooltips 1.4.5
+	- libraryferret 4.0.0
+	- lithostitched 1.4.11
+	- magistuarmory 10.11
+	- mcwbridges 3.1.2
+	- mcwfences 1.2.1
+	- mcwfurnitures 3.4.1
+	- mcwlights 1.1.5
+	- melody 1.0.2
+	- memoryleakfix 1.1.5
+	- minecraft 1.20.1
+	- mmode 1.3.4
+	- modernfix 5.27.83+mc1.20.1
+	- modmenu 7.2.2
+	- moonlight 1.20-2.16.35
+		\-- mixinsquared 0.1.1
+	- morevanillaarmor 1.20.1-5.1.2
+	- mr_ati_structuresvanillaedition 1.4.5
+	- mr_limesplatus_ending 1-v1.1.0c
+	- mr_tidal_towns 1.3.4
+	- naturalist 5.0pre5
+		\-- midnightlib 1.4.2
+	- negativeutils 1.0.3
+	- nochatreports 1.20.1-v2.2.3
+	- noisium 2.3.0+mc1.20-1.20.1
+	- notenoughanimations 1.12.6
+		|-- transition 1.0.25
+		\-- trender 1.0.17
+	- nyfsspiders 3.0.2
+		\-- awcapi 1.0.3
+	- oculus 1.8.0
+	- ohthetreesyoullgrow 1.7.0
+	- packetfixer 3.3.2
+	- paraglider 20.1.3
+	- parcool 3.4.3.3
+	- particlepathmod 1.0.0
+	- particlerain 4.0.0-beta.11
+	- particular 1.5.7
+	- patchouli 1.20.1-85-FORGE
+	- pehkui 3.8.2+1.20.1-forge
+	- platform 1.3.4
+	- playeranimator 1.0.2-rc1+1.20
+	- playerrevive 2.0.31
+	- playerscreenevent 1.0.0
+	- prism 1.0.5
+	- progressivebosses 4.3.12
+	- puzzleslib 8.1.33
+		\-- puzzlesaccessapi 20.1.1
+	- quark 4.0-462
+	- replaymod 1.20.1-2.6.23
+	- resourcefulconfig 2.1.3
+	- rhino 2001.2.3-build.10
+	- rottencreatures 1.1.0
+	- screentext 1.0-SNAPSHOT
+	- searchables 1.0.3
+	- shaders 1.1.2
+	- skinrestorer 2.11.0+1.20-forge
+	- sound_physics_remastered 1.20.1-1.5.1
+	- spartanshields 3.1.1
+	- spiffyhud 3.1.2
+	- structure_gel 2.16.2
+	- subtitlemod 1.3.3
+	- sushi_bar 0.2.21.20
+	- takesapillage 1.0.3
+	- terrablender 3.0.1.10
+	- trashslot 15.1.5
+	- travelersbackpack 9.1.57
+	- unusualend 2.3.1.2
+	- visiblebarriers 2.0.9-forge.1.20.1
+	- visuality 2.2.0
+	- voicechat 1.20.1-2.6.22
+		\-- voicechat_api 2.6.20
+	- watermedia 2.1.37
+	- watermedia_binaries 3.0.0-rc.4
+	- watervision 0.1.0-alpha
+	- waves 1.6a
+	- waystones 14.1.21
+	- xaerominimap 26.5.0
+		\-- xaerolib 1.7.3
+	- xaeroworldmap 1.46.0
+	- zeta 1.0-31
+[16:24:22] [main/WARN]: Reference map 'CerbonsAPI-Forge-1.20.1-forge-refmap.json' for cerbons_api.mixins.json could not be read. If this is a development environment you can ignore this message
+[16:24:22] [main/WARN]: Reference map 'mixins.nonmmlauncher.replaymod.refmap.json' for mixins.nonmmlauncher.replaymod.json could not be read. If this is a development environment you can ignore this message
+[16:24:22] [main/WARN]: Reference map 'trashslot.refmap.json' for trashslot.mixins.json could not be read. If this is a development environment you can ignore this message
+[16:24:24] [main/WARN]: Reference map 'itemselector.refmap.json' for l2itemselector.mixins.json could not be read. If this is a development environment you can ignore this message
+[16:24:24] [main/INFO]: Packet Fixer forge 1.19.4-1.20.1 has been applied successfully.
+[16:24:25] [main/INFO]: Config version: 6
+[16:24:25] [main/INFO]: BadOptimizations config dump:
+[16:24:25] [main/INFO]: enable_toast_optimizations: true
+[16:24:25] [main/INFO]: ignore_mod_incompatibilities: false
+[16:24:25] [main/INFO]: lightmap_time_change_needed_for_update: 80
+[16:24:25] [main/INFO]: enable_lightmap_caching: true
+[16:24:25] [main/INFO]: enable_particle_manager_optimization: true
+[16:24:25] [main/INFO]: enable_entity_renderer_caching: true
+[16:24:25] [main/INFO]: log_config: true
+[16:24:25] [main/INFO]: enable_remove_redundant_fov_calculations: true
+[16:24:25] [main/INFO]: config_version: 6
+[16:24:25] [main/INFO]: enable_sky_angle_caching_in_worldrenderer: true
+[16:24:25] [main/INFO]: enable_block_entity_renderer_caching: true
+[16:24:25] [main/INFO]: skycolor_time_change_needed_for_update: 3
+[16:24:25] [main/INFO]: enable_entity_flag_caching: true
+[16:24:25] [main/INFO]: ignore_mod_cache_hooks: false
+[16:24:25] [main/INFO]: enable_debug_renderer_disable_if_not_needed: true
+[16:24:25] [main/INFO]: enable_sky_color_caching: true
+[16:24:25] [main/INFO]: enable_remove_tutorial_if_not_demo: true
+[16:24:25] [main/INFO]: show_f3_text: true
+[16:24:25] [main/INFO]: Disabling enable_entity_flag_caching because mod "biomeswevegone" is incompatible with it (built-in)
+[16:24:25] [main/WARN]: Reference map '' for adapter.init.mixins.json could not be read. If this is a development environment you can ignore this message
+[16:24:31] [main/WARN]: Error loading class: com/ultramega/showcaseitem/ShowcaseItemFeature (java.lang.ClassNotFoundException: com.ultramega.showcaseitem.ShowcaseItemFeature)
+[16:24:31] [main/WARN]: Error loading class: mekanism/client/render/entity/RenderFlame (java.lang.ClassNotFoundException: mekanism.client.render.entity.RenderFlame)
+[16:24:31] [main/WARN]: Error loading class: mekanism/client/render/armor/MekaSuitArmor (java.lang.ClassNotFoundException: mekanism.client.render.armor.MekaSuitArmor)
+[16:24:38] [main/WARN]: Error loading class: weather2/weathersystem/wind/WindManager (java.lang.ClassNotFoundException: weather2.weathersystem.wind.WindManager)
+[16:24:38] [main/WARN]: @Mixin target weather2.weathersystem.wind.WindManager was not found waves.mixins.json:WindManagerMixin from mod waves
+[16:24:38] [main/WARN]: Error loading class: weather2/weathersystem/storm/TornadoHelper (java.lang.ClassNotFoundException: weather2.weathersystem.storm.TornadoHelper)
+[16:24:38] [main/WARN]: @Mixin target weather2.weathersystem.storm.TornadoHelper was not found waves.mixins.json:TornadoHelperMixin from mod waves
+[16:24:41] [main/WARN]: Error loading class: dev/ftb/mods/ftbquests/client/gui/quests/QuestScreen (java.lang.ClassNotFoundException: dev.ftb.mods.ftbquests.client.gui.quests.QuestScreen)
+[16:24:41] [main/WARN]: Error loading class: dev/ftb/mods/ftbquests/client/gui/QuestScreen (java.lang.ClassNotFoundException: dev.ftb.mods.ftbquests.client.gui.QuestScreen)
+[16:24:41] [main/WARN]: Error loading class: dev/ftb/mods/ftbquests/client/gui/MultilineTextEditorScreen (java.lang.ClassNotFoundException: dev.ftb.mods.ftbquests.client.gui.MultilineTextEditorScreen)
+[16:24:41] [main/WARN]: Error loading class: dev/ftb/mods/ftblibrary/ui/MultilineTextBox (java.lang.ClassNotFoundException: dev.ftb.mods.ftblibrary.ui.MultilineTextBox)
+[16:24:41] [main/WARN]: Error loading class: dev/ftb/mods/ftbquests/client/gui/MultilineTextEditorScreen$ToolbarPanel (java.lang.ClassNotFoundException: dev.ftb.mods.ftbquests.client.gui.MultilineTextEditorScreen$ToolbarPanel)
+[16:24:41] [main/WARN]: Error loading class: com/hrznstudio/emojiful/render/EmojiFontHelper$EmojiCharacterRenderer (java.lang.ClassNotFoundException: com.hrznstudio.emojiful.render.EmojiFontHelper$EmojiCharacterRenderer)
+[16:24:41] [main/WARN]: Error loading class: com/hrznstudio/emojiful/render/EmojiFontRenderer$EmojiCharacterRenderer (java.lang.ClassNotFoundException: com.hrznstudio.emojiful.render.EmojiFontRenderer$EmojiCharacterRenderer)
+[16:24:41] [main/WARN]: Error loading class: com/hrznstudio/emojiful/render/EmojiFontHelper$EmojiCharacterRenderer (java.lang.ClassNotFoundException: com.hrznstudio.emojiful.render.EmojiFontHelper$EmojiCharacterRenderer)
+[16:24:41] [main/WARN]: Error loading class: com/hrznstudio/emojiful/render/EmojiFontRenderer$EmojiCharacterRenderer (java.lang.ClassNotFoundException: com.hrznstudio.emojiful.render.EmojiFontRenderer$EmojiCharacterRenderer)
+[16:24:41] [main/WARN]: Error loading class: vazkii/patchouli/client/book/BookTextParser (java.lang.ClassNotFoundException: vazkii.patchouli.client.book.BookTextParser)
+[16:24:42] [main/WARN]: Error loading class: dev/tr7zw/skinlayers/render/CustomizableModelPart (java.lang.ClassNotFoundException: dev.tr7zw.skinlayers.render.CustomizableModelPart)
+[16:24:42] [main/WARN]: Error loading class: vectorwing/farmersdelight/common/block/StandingCanvasSignBlock (java.lang.ClassNotFoundException: vectorwing.farmersdelight.common.block.StandingCanvasSignBlock)
+[16:24:42] [main/WARN]: Error loading class: vectorwing/farmersdelight/common/block/WallCanvasSignBlock (java.lang.ClassNotFoundException: vectorwing.farmersdelight.common.block.WallCanvasSignBlock)
+[16:24:42] [main/WARN]: Error loading class: vectorwing/farmersdelight/client/renderer/HangingCanvasSignRenderer (java.lang.ClassNotFoundException: vectorwing.farmersdelight.client.renderer.HangingCanvasSignRenderer)
+[16:24:42] [main/WARN]: Error loading class: vectorwing/farmersdelight/client/renderer/CanvasSignRenderer (java.lang.ClassNotFoundException: vectorwing.farmersdelight.client.renderer.CanvasSignRenderer)
+[16:24:42] [main/WARN]: Error loading class: vectorwing/farmersdelight/client/gui/CanvasSignEditScreen (java.lang.ClassNotFoundException: vectorwing.farmersdelight.client.gui.CanvasSignEditScreen)
+[16:24:43] [main/WARN]: Error loading class: net/mehvahdjukaar/supplementaries/common/entities/SlimeBallEntity (java.lang.ClassNotFoundException: net.mehvahdjukaar.supplementaries.common.entities.SlimeBallEntity)
+[16:24:44] [main/WARN]: Error loading class: net/dries007/tfc/common/fluids/MixingFluid (java.lang.ClassNotFoundException: net.dries007.tfc.common.fluids.MixingFluid)
+[16:24:44] [main/WARN]: @Mixin target net.dries007.tfc.common.fluids.MixingFluid was not found particular.forge.mixins.json:compat.TFCMixingFluidMixin from mod particular
+[16:24:45] [main/WARN]: Error loading class: noobanidus/mods/lootr/config/ConfigManager (java.lang.ClassNotFoundException: noobanidus.mods.lootr.config.ConfigManager)
+[16:24:45] [main/WARN]: @Mixin target noobanidus.mods.lootr.config.ConfigManager was not found quark_integrations.mixins.json:lootr.ConfigManagerMixin from mod quark
+[16:24:46] [main/INFO]: [MemoryLeakFix] Will be applying 3 memory leak fixes!
+[16:24:46] [main/INFO]: [MemoryLeakFix] Currently enabled memory leak fixes: [targetEntityLeak, biomeTemperatureLeak, hugeScreenshotLeak]
+[16:24:46] [main/WARN]: Force-disabling mixin 'features.render.world.sky.WorldRendererMixin' as rule 'mixin.features.render.world.sky' (added by mods [oculus]) disables it and children
+[16:24:46] [main/WARN]: Force-disabling mixin 'features.render.world.sky.ClientWorldMixin' as rule 'mixin.features.render.world.sky' (added by mods [oculus]) disables it and children
+[16:24:46] [main/WARN]: Force-disabling mixin 'features.render.world.sky.BackgroundRendererMixin' as rule 'mixin.features.render.world.sky' (added by mods [oculus]) disables it and children
+[16:24:46] [main/WARN]: Force-disabling mixin 'features.render.gui.font.GlyphRendererMixin' as rule 'mixin.features.render.gui.font' (added by mods [oculus]) disables it and children
+[16:24:46] [main/WARN]: Force-disabling mixin 'features.render.gui.font.FontSetMixin' as rule 'mixin.features.render.gui.font' (added by mods [oculus]) disables it and children
+[16:24:46] [main/WARN]: Force-disabling mixin 'features.render.entity.shadows.EntityRenderDispatcherMixin' as rule 'mixin.features.render.entity' (added by mods [oculus]) disables it and children
+[16:24:46] [main/WARN]: Force-disabling mixin 'features.render.entity.remove_streams.ModelPartMixin' as rule 'mixin.features.render.entity' (added by mods [oculus]) disables it and children
+[16:24:46] [main/WARN]: Force-disabling mixin 'features.render.entity.remove_streams.HierarchicalModelMixin' as rule 'mixin.features.render.entity' (added by mods [oculus]) disables it and children
+[16:24:46] [main/WARN]: Force-disabling mixin 'features.render.entity.fast_render.ModelPartMixin' as rule 'mixin.features.render.entity' (added by mods [oculus]) disables it and children
+[16:24:46] [main/WARN]: Force-disabling mixin 'features.render.entity.fast_render.CuboidMixin' as rule 'mixin.features.render.entity' (added by mods [oculus]) disables it and children
+[16:24:46] [main/WARN]: Force-disabling mixin 'features.render.entity.cull.EntityRendererMixin' as rule 'mixin.features.render.entity' (added by mods [oculus]) disables it and children
+[16:24:48] [main/WARN]: Error loading class: vazkii/patchouli/client/book/BookTextParser (java.lang.ClassNotFoundException: vazkii.patchouli.client.book.BookTextParser)
+[16:24:48] [main/WARN]: Error loading class: vazkii/patchouli/client/book/BookTextParser (java.lang.ClassNotFoundException: vazkii.patchouli.client.book.BookTextParser)
+[16:24:49] [main/WARN]: Error loading class: net/optifine/render/ChunkVisibility (java.lang.ClassNotFoundException: net.optifine.render.ChunkVisibility)
+[16:24:49] [main/WARN]: Error loading class: shadersmod/client/ShadersRender (java.lang.ClassNotFoundException: shadersmod.client.ShadersRender)
+[16:24:49] [main/WARN]: Error loading class: net/optifine/shaders/ShadersRender (java.lang.ClassNotFoundException: net.optifine.shaders.ShadersRender)
+[16:24:50] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.4).
+[16:24:51] [main/INFO]: Mixing client.MixinMinecraft from mixins/common/nochatreports.mixins.json into net.minecraft.client.Minecraft
+[16:24:52] [main/ERROR]: Failed to call provider.updateModuleReads
+org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:392) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:250) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:156) ~[modlauncher-10.0.9.jar:10.0.9+10.0.9+main.dcd20f30]
+	at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:88) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:113) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:135) ~[securejarhandler-2.1.10.jar:?]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:?]
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[?:?]
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source) ~[?:?]
+	at java.lang.Class.privateGetPublicMethods(Unknown Source) ~[?:?]
+	at java.lang.Class.privateGetPublicMethods(Unknown Source) ~[?:?]
+	at java.lang.Class.getMethods(Unknown Source) ~[?:?]
+	at net.minecraftforge.fml.earlydisplay.DisplayWindow.updateModuleReads(DisplayWindow.java:616) ~[fmlearlydisplay-1.20.1-47.4.18.jar%23157!/:1.0]
+	at net.minecraftforge.fml.loading.ImmediateWindowHandler$Wrapper.updateModuleReads(ImmediateWindowHandler.java:243) ~[fmlloader-1.20.1-47.4.18.jar%23156!/:1.0]
+	at org.sinytra.connector.service.ConnectorLoaderService$1.updateModuleReads(ConnectorLoaderService.java:69) ~[Connector-1.0.0-beta.49+1.20.1.jar%23302!/:1.0.0-beta.49+1.20.1]
+	at net.minecraftforge.fml.loading.ImmediateWindowHandler.acceptGameLayer(ImmediateWindowHandler.java:89) ~[fmlloader-1.20.1-47.4.18.jar:1.0]
+	at net.minecraftforge.fml.loading.FMLLoader.beforeStart(FMLLoader.java:216) ~[fmlloader-1.20.1-47.4.18.jar:1.0]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.launchService(CommonLaunchHandler.java:92) ~[fmlloader-1.20.1-47.4.18.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at com.modrinth.theseus.MinecraftLaunch.relaunch(MinecraftLaunch.java:63) ~[theseus.jar%2386!/:?]
+	at com.modrinth.theseus.MinecraftLaunch.main(MinecraftLaunch.java:28) ~[theseus.jar%2386!/:?]
+Caused by: org.spongepowered.asm.mixin.injection.throwables.InjectionError: Critical injection failure: Redirector visibleBarriers$breakAir(Lnet/minecraft/world/level/block/state/BlockState;)Z in visiblebarriers.mixins.json:client.MinecraftClientMixin from mod visiblebarriers failed injection check, (0/1) succeeded. Scanned 1 target(s). Using refmap visiblebarriers.refmap.json
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.postInject(InjectionInfo.java:468) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.applyInjections(MixinTargetContext.java:1384) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyInjections(MixinApplicatorStandard.java:1062) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMixin(MixinApplicatorStandard.java:402) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:327) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:421) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:403) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:363) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	... 38 more
+[16:24:52] [main/INFO]: [java.lang.ThreadGroup:uncaughtException:-1]: java.lang.reflect.InvocationTargetException
+[16:24:52] [main/INFO]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[16:24:52] [main/INFO]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+[16:24:52] [main/INFO]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+[16:24:52] [main/INFO]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+[16:24:52] [main/INFO]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at com.modrinth.theseus.MinecraftLaunch.relaunch(MinecraftLaunch.java:63)
+[16:24:52] [main/INFO]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at com.modrinth.theseus.MinecraftLaunch.main(MinecraftLaunch.java:28)
+[16:24:52] [main/INFO]: [java.lang.ThreadGroup:uncaughtException:-1]: Caused by: java.lang.RuntimeException: org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+[16:24:52] [main/INFO]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:32)
+[16:24:52] [main/INFO]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53)
+[16:24:52] [main/INFO]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71)
+[16:24:52] [main/INFO]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.Launcher.run(Launcher.java:108)
+[16:24:52] [main/INFO]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.Launcher.main(Launcher.java:78)
+[16:24:52] [main/INFO]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26)
+[16:24:52] [main/INFO]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23)
+[16:24:52] [main/INFO]: [java.lang.ThreadGroup:uncaughtException:-1]: 	at cpw.mods.bootstraplauncher@1.1.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141)
+[16:24:52] [main/INFO]: [java.lang.ThreadGroup:uncaughtException:-1]: 	... 6 more
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: Caused by: org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:392)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:250)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:156)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:88)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:113)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:135)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.lang.Class.privateGetPublicMethods(Unknown Source)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.lang.Class.privateGetPublicMethods(Unknown Source)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.lang.Class.getMethods(Unknown Source)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/fmlearlydisplay@1.20.1-47.4.18/net.minecraftforge.fml.earlydisplay.DisplayWindow.updateModuleReads(DisplayWindow.java:616)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/fmlloader@1.20.1-47.4.18/net.minecraftforge.fml.loading.ImmediateWindowHandler$Wrapper.updateModuleReads(ImmediateWindowHandler.java:243)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at LAYER SERVICE/org.sinytra.connector@1.0.0-beta.49+1.20.1/org.sinytra.connector.service.ConnectorLoaderService$1.updateModuleReads(ConnectorLoaderService.java:69)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/fmlloader@1.20.1-47.4.18/net.minecraftforge.fml.loading.ImmediateWindowHandler.acceptGameLayer(ImmediateWindowHandler.java:89)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/fmlloader@1.20.1-47.4.18/net.minecraftforge.fml.loading.FMLLoader.beforeStart(FMLLoader.java:216)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/fmlloader@1.20.1-47.4.18/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.launchService(CommonLaunchHandler.java:92)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	... 13 more
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: Caused by: org.spongepowered.asm.mixin.injection.throwables.InjectionError: Critical injection failure: Redirector visibleBarriers$breakAir(Lnet/minecraft/world/level/block/state/BlockState;)Z in visiblebarriers.mixins.json:client.MinecraftClientMixin from mod visiblebarriers failed injection check, (0/1) succeeded. Scanned 1 target(s). Using refmap visiblebarriers.refmap.json
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.injection.struct.InjectionInfo.postInject(InjectionInfo.java:468)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinTargetContext.applyInjections(MixinTargetContext.java:1384)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyInjections(MixinApplicatorStandard.java:1062)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMixin(MixinApplicatorStandard.java:402)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:327)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:421)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:403)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:363)
+[16:24:52] [main/INFO]: [java.lang.Throwable:printStackTrace:-1]: 	... 38 more
