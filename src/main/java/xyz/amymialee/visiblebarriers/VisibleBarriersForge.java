@@ -7,9 +7,6 @@ import xyz.amymialee.visiblebarriers.common.VisibleBarriersCommon;
 @Mod(VisibleBarriersCommon.MOD_ID)
 public class VisibleBarriersForge {
     public VisibleBarriersForge() {
-        var bus = FMLJavaModLoadingContext.get().getModEventBus();
-        VisibleBarriersCommon.init(bus);
-        bus.addListener(VisibleBarriers::clientSetup);
-        bus.addListener(VisibleInput::registerKeys);
+        VisibleBarriersCommon.init(FMLJavaModLoadingContext.get().getModEventBus());
     }
 }
