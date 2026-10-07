@@ -13,18 +13,12 @@ import xyz.amymialee.visiblebarriers.VisibleBarriers;
 @Mixin(MouseHandler.class)
 public class MouseMixin {
     @Shadow @Final private Minecraft minecraft;
-    @Shadow private double accumulatedScrollY;
 
     @Inject(method = "onScroll", at = @At("HEAD"), cancellable = true)
     private void visibleBarriers$scroll(long window, double horizontal, double vertical, CallbackInfo ci) {
         if (window == minecraft.getWindow().getWindow() && VisibleBarriers.isHoldingZoom()) {
-            double d = vertical * minecraft.options.mouseWheelSensitivity().get();
-            accumulatedScrollY += d;
-            int i = (int) accumulatedScrollY;
-            if (i != 0) {
-                accumulatedScrollY -= i;
-                VisibleBarriers.modifyZoomModifier(-i);
-            }
+            double sensitivity = minecraft.options.mouseWheelSensitivity().get();
+            VisibleBarriers.modifyZoomModifier((float) (-vertical * sensitivity));
             ci.cancel();
         }
     }
