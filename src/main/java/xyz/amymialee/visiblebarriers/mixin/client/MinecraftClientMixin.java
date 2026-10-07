@@ -13,7 +13,7 @@ public class MinecraftClientMixin {
         method = "continueAttack",
         at = @At(
             value = "INVOKE",
-            target = "Lnet/minecraft/world/level/block/state/BlockState;isAir()Z"
+            target = "Lnet/minecraft/world/level/block/state/BlockBehaviour$BlockStateBase;isAir()Z"
         )
     )
     private boolean visibleBarriers$breakAir(BlockState state) {
