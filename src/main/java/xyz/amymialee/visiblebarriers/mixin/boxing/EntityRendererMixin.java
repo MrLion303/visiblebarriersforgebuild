@@ -1,16 +1,9 @@
 package xyz.amymialee.visiblebarriers.mixin.boxing;
 
 import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.renderer.PoseStack;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
-import net.minecraft.client.renderer.item.ItemRenderer;
-import net.minecraft.client.renderer.entity.ItemRenderer;
-import net.minecraft.client.renderer.item.ItemInHandRenderer;
-import net.minecraft.client.renderer.texture.OverlayTexture;
-import net.minecraft.client.renderer.block.model.ItemTransforms;
-import net.minecraft.client.renderer.block.model.BakedModel;
-import net.minecraft.client.renderer.entity.EntityRendererProvider.Context;
-import net.minecraft.client.renderer.PoseStack;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -27,7 +20,7 @@ public abstract class EntityRendererMixin<T extends Entity> {
     @Unique protected FloatyRenderer<T> floater;
 
     @Inject(method = "<init>", at = @At("TAIL"))
-    public void visibleBarriers$giveRenderer(Context context, CallbackInfo ci) {
+    public void visibleBarriers$giveRenderer(EntityRendererProvider.Context context, CallbackInfo ci) {
         this.floater = new FloatyRenderer<>(context.getItemRenderer(), Items.BARRIER.getDefaultInstance());
     }
 
@@ -37,7 +30,7 @@ public abstract class EntityRendererMixin<T extends Entity> {
             ItemStack stack = entity.getPickResult();
             if (stack != null) {
                 if (!this.floater.getItem().is(stack.getItem())) this.floater.setItem(stack);
-            } else if (!this.floater.getItem().is(Items.STRUCTURE_VOID)) {
+            } else {
                 this.floater.setItem(Items.STRUCTURE_VOID.getDefaultInstance());
             }
             this.floater.render(entity, tickDelta, matrices, vertexConsumers, light);
