@@ -9,7 +9,13 @@ import xyz.amymialee.visiblebarriers.VisibleConfig;
 
 @Mixin(Minecraft.class)
 public class MinecraftClientMixin {
-    @Redirect(method = "continueAttack", at = @At(value = "INVOKE", target = "net/minecraft/world/level/block/state/BlockState.isAir()Z"))
+    @Redirect(
+        method = "continueAttack",
+        at = @At(
+            value = "INVOKE",
+            target = "Lnet/minecraft/world/level/block/state/BlockBehaviour$BlockStateBase;isAir()Z"
+        )
+    )
     private boolean visibleBarriers$breakAir(BlockState state) {
         return VisibleConfig.isAirVisible() ? false : state.isAir();
     }
