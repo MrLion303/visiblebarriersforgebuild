@@ -1,7 +1,7 @@
 package xyz.amymialee.visiblebarriers.mixin.client;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
@@ -16,7 +16,7 @@ public class MinecraftClientMixin {
             target = "Lnet/minecraft/world/level/block/state/BlockBehaviour$BlockStateBase;isAir()Z"
         )
     )
-    private boolean visibleBarriers$breakAir(BlockState state) {
+    private boolean visibleBarriers$breakAir(BlockBehaviour.BlockStateBase state) {
         return VisibleConfig.isAirVisible() ? false : state.isAir();
     }
 }
