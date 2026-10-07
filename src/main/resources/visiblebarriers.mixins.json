@@ -26,7 +26,6 @@
     "client.ItemStackMixin",
     "client.LightBlockMixin",
     "client.LightmapTextureManagerMixin",
-    "client.MinecraftClientMixin",
     "client.MouseMixin",
     "client.ParticleManagerMixin"
   ],
