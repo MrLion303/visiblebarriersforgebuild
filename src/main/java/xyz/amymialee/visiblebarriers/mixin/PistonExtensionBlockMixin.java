@@ -1,6 +1,6 @@
 package xyz.amymialee.visiblebarriers.mixin;
 
-import net.minecraft.world.level.block.PistonHeadBlock;
+import net.minecraft.world.level.block.piston.PistonHeadBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.PistonType;
