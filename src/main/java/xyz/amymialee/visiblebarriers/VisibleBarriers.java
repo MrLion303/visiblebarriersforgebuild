@@ -12,6 +12,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.piston.PistonHeadBlock;
 import net.minecraft.world.level.block.state.properties.PistonType;
+import net.minecraft.util.Mth;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -100,8 +101,8 @@ public class VisibleBarriers {
     public static Weather getWeather() { return setWeather; }
     public static void setWeather(Weather value) { setWeather=value; sendFeedback("visiblebarriers.command.weather", net.minecraft.network.chat.Component.translatable(value.translationKey)); }
     public static boolean isHoldingZoom() { return holdingZoom; }
-    public static float getZoomModifier() { return (float)MathHelper.clamp(4f / Math.pow(zoomScroll,2),0.001f,1); }
-    public static void modifyZoomModifier(float amount) { zoomScroll=MathHelper.clamp(zoomScroll-amount,0.01f,1000); sendFeedback("visiblebarriers.feedback.zoom","%.0f".formatted(10000f/(getZoomModifier()*100))); }
+    public static float getZoomModifier() { return Mth.clamp((float)(4f / Math.pow(zoomScroll,2)),0.001f,1f); }
+    public static void modifyZoomModifier(float amount) { zoomScroll=Mth.clamp(zoomScroll-amount,0.01f,1000f); sendFeedback("visiblebarriers.feedback.zoom","%.0f".formatted(10000f/(getZoomModifier()*100))); }
 
     public enum Weather {
         DEFAULT(-1,-1,"visiblebarriers.weather.default"), CLEAR(0,0,"visiblebarriers.weather.clear"),
