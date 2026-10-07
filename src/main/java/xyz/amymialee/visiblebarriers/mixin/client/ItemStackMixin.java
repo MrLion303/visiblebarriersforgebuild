@@ -1,7 +1,6 @@
 package xyz.amymialee.visiblebarriers.mixin.client;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item.TooltipContext;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

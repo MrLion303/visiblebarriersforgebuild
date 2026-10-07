@@ -22,7 +22,6 @@
     "client.ClientPlayerInteractionManagerMixin",
     "client.ClientWorldMixin",
     "client.DisplayContextMixin",
-    "client.EmptyEntityRendererMixin",
     "client.EntityMixin",
     "client.GameRendererMixin",
     "client.ItemStackMixin",

@@ -1,7 +1,7 @@
 package xyz.amymialee.visiblebarriers.mixin.boxing;
 
 import net.minecraft.client.renderer.MultiBufferSource;
-import net.minecraft.client.renderer.PoseStack;
+import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.world.entity.Entity;
