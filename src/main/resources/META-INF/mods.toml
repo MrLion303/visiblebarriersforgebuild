@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All-Rights-Reserved"
+
+[[mods]]
+modId="visiblebarriers"
+version="${file.jarVersion}"
+displayName="Visible Barriers"
+authors="AmyMialee, Forge port"
+description='''Various tools for Minecraft Mapmaking.'''
+
+[[dependencies.visiblebarriers]]
+modId="forge"
+mandatory=true
+versionRange="[47.0,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.visiblebarriers]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="BOTH"
