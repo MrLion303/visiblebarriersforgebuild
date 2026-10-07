@@ -21,7 +21,6 @@
     "client.ClientPistonExtensionBlockMixin",
     "client.ClientPlayerInteractionManagerMixin",
     "client.ClientWorldMixin",
-    "client.DisplayContextMixin",
     "client.EntityMixin",
     "client.GameRendererMixin",
     "client.ItemStackMixin",
