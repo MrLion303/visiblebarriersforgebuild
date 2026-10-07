@@ -15,7 +15,7 @@ import net.minecraftforge.fml.common.Mod;
 import org.lwjgl.glfw.GLFW;
 import xyz.amymialee.visiblebarriers.common.VisibleBarriersCommon;
 
-@Mod.EventBusSubscriber(modid=VisibleBarriersCommon.MOD_ID, value=net.minecraftforge.api.distmarker.Dist.CLIENT, bus=Mod.EventBusSubscriber.Bus.FORGE)
+@Mod.EventBusSubscriber(modid=VisibleBarriersCommon.MOD_ID, value=net.minecraftforge.api.distmarker.Dist.CLIENT, bus=Mod.EventBusSubscriber.Bus.MOD)
 public class VisibleInput {
     private static KeyMapping keyVisibility, keyBarriers, keyLights, keyStructureVoids, keyBubbleColumns, keyFullBright, keyTime, keyZoom;
 
