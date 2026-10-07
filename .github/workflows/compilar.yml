@@ -1,0 +1,50 @@
+name: Compilar Visible Barriers Forge
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar proyecto
+        uses: actions/checkout@v4
+
+      - name: Preparar Forge MDK
+        shell: bash
+        run: |
+          set -e
+          mkdir mdk
+          curl -L --fail -o forge-mdk.zip "https://maven.minecraftforge.net/net/minecraftforge/forge/1.20.1-47.4.12/forge-1.20.1-47.4.12-mdk.zip"
+          unzip -q forge-mdk.zip -d mdk
+          cp -R mdk/gradle .
+          cp mdk/gradlew .
+          cp mdk/gradlew.bat .
+          chmod +x gradlew
+
+      - name: Recuperar recursos oficiales de Visible Barriers
+        shell: bash
+        run: |
+          set -e
+          curl -L --fail -o visiblebarriers-source.tar.gz "https://github.com/AmyMialeeMods/visiblebarriers/archive/0ad926196a21e8aa0a52404c9d6aeda475af67a9.tar.gz"
+          tar -xzf visiblebarriers-source.tar.gz
+          mkdir -p src/main/resources/assets
+          cp -R visiblebarriers-0ad926196a21e8aa0a52404c9d6aeda475af67a9/src/main/resources/assets/. src/main/resources/assets/
+          if [ -d "visiblebarriers-0ad926196a21e8aa0a52404c9d6aeda475af67a9/src/main/resources/resourcepacks" ]; then
+            cp -R visiblebarriers-0ad926196a21e8aa0a52404c9d6aeda475af67a9/src/main/resources/resourcepacks src/main/resources/
+          fi
+          cp visiblebarriers-0ad926196a21e8aa0a52404c9d6aeda475af67a9/src/main/resources/pack.mcmeta src/main/resources/ 2>/dev/null || true
+          rm -rf visiblebarriers-* visiblebarriers-source.tar.gz forge-mdk.zip mdk
+
+      - name: Compilar
+        shell: bash
+        run: ./gradlew build --no-daemon
+
+      - name: Publicar JAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: visible-barriers-forge-1.20.1
+          path: build/libs/*.jar
+          if-no-files-found: error
