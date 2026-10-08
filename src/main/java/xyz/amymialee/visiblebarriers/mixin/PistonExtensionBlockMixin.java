@@ -38,8 +38,10 @@ public abstract class PistonExtensionBlockMixin extends BlockMixin {
         cir.setReturnValue(defaultBlockState().setValue(PistonHeadBlock.FACING, ctx.getNearestLookingDirection().getOpposite()));
     }
 
-    @Override
-    public void visibleBarriers$togglePistonType(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit, CallbackInfoReturnable<InteractionResult> cir) {
+    @Inject(method = "use", at = @At("HEAD"), cancellable = true)
+    private void visibleBarriers$togglePistonType(BlockState state, Level level, BlockPos pos, Player player,
+                                                   InteractionHand hand, BlockHitResult hit,
+                                                   CallbackInfoReturnable<InteractionResult> cir) {
         Item item = player.getItemInHand(hand).getItem();
         if (item == VisibleBarriersCommon.MOVING_PISTON_BLOCK_ITEM.get() && state.hasProperty(PistonHeadBlock.TYPE)) {
             level.setBlock(pos, state.setValue(PistonHeadBlock.TYPE,
