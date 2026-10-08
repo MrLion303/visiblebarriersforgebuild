@@ -4,7 +4,8 @@
   "package": "xyz.amymialee.visiblebarriers.mixin",
   "compatibilityLevel": "JAVA_17",
   "refmap": "visiblebarriers.refmap.json",
-  "mixins": [
+  "mixins": [],
+  "client": [
     "AirBlockMixin",
     "BubbleColumnBlockMixin",
     "EntityTypeMixin",
@@ -12,9 +13,7 @@
     "PistonExtensionBlockMixin",
     "boxing.AbstractBlockMixin",
     "boxing.BlockMixin",
-    "boxing.WorldMixin"
-  ],
-  "client": [
+    "boxing.WorldMixin",
     "boxing.EntityRendererMixin",
     "client.AbstractBlockStateMixin",
     "client.ClientBubbleColumnBlockMixin",
