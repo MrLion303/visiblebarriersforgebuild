@@ -3,6 +3,8 @@ package xyz.amymialee.visiblebarriers.mixin.client;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.multiplayer.ClientLevel.ClientLevelData;
 import net.minecraft.world.level.GameRules;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleOptions;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -21,7 +23,7 @@ public class ClientWorldMixin extends WorldMixin {
     }
 
     @Inject(method = "doAnimateTick", at = @At("HEAD"), cancellable = true)
-    private void visibleBarriers$removeParticles(int x, int y, int z, int radius, net.minecraft.util.RandomSource random, CallbackInfo ci) {
+    private void visibleBarriers$removeParticles(int x, int y, int z, int radius, net.minecraft.util.RandomSource random, Block block, BlockPos.MutableBlockPos mutablePos, CallbackInfo ci) {
         if (VisibleConfig.shouldHideParticles()) ci.cancel();
     }
 
