@@ -17,8 +17,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import xyz.amymialee.visiblebarriers.common.VisibleBarriersCommon;
 import xyz.amymialee.visiblebarriers.mixin.boxing.BlockMixin;
@@ -38,10 +36,10 @@ public abstract class PistonExtensionBlockMixin extends BlockMixin {
         cir.setReturnValue(defaultBlockState().setValue(PistonHeadBlock.FACING, ctx.getNearestLookingDirection().getOpposite()));
     }
 
-    @Inject(method = "use", at = @At("HEAD"), cancellable = true)
-    private void visibleBarriers$togglePistonType(BlockState state, Level level, BlockPos pos, Player player,
-                                                   InteractionHand hand, BlockHitResult hit,
-                                                   CallbackInfoReturnable<InteractionResult> cir) {
+    @Override
+    public void visibleBarriers$use(BlockState state, Level level, BlockPos pos, Player player,
+                                    InteractionHand hand, BlockHitResult hit,
+                                    CallbackInfoReturnable<InteractionResult> cir) {
         Item item = player.getItemInHand(hand).getItem();
         if (item == VisibleBarriersCommon.MOVING_PISTON_BLOCK_ITEM.get() && state.hasProperty(PistonHeadBlock.TYPE)) {
             level.setBlock(pos, state.setValue(PistonHeadBlock.TYPE,
