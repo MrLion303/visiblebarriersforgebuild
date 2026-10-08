@@ -3,18 +3,10 @@ package xyz.amymialee.visiblebarriers;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.item.ItemProperties;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.piston.PistonHeadBlock;
-import net.minecraft.world.level.block.state.properties.PistonType;
 import net.minecraft.util.Mth;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -45,18 +37,6 @@ public class VisibleBarriers {
             ItemBlockRenderTypes.setRenderLayer(Blocks.MOVING_PISTON, RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(Blocks.BUBBLE_COLUMN, RenderType.translucent());
 
-            ItemProperties.register(VisibleBarriersCommon.MOVING_PISTON_BLOCK_ITEM.get(),
-                    new ResourceLocation("sticky"),
-                    (stack, level, entity, seed) -> {
-                        CompoundTag tag = stack.getTagElement("BlockStateTag");
-                        return tag != null && "sticky".equals(tag.getString(PistonHeadBlock.TYPE.getName())) ? 1.0F : 0.0F;
-                    });
-            ItemProperties.register(VisibleBarriersCommon.BUBBLE_COLUMN_BLOCK_ITEM.get(),
-                    new ResourceLocation("drag"),
-                    (stack, level, entity, seed) -> {
-                        CompoundTag tag = stack.getTagElement("BlockStateTag");
-                        return tag != null && "true".equals(tag.getString("drag")) ? 1.0F : 0.0F;
-                    });
             VisibleConfig.loadConfig();
         });
     }
