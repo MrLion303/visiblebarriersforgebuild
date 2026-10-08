@@ -11,11 +11,8 @@ import net.minecraftforge.client.event.RegisterClientCommandsEvent;
 import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
 import org.lwjgl.glfw.GLFW;
-import xyz.amymialee.visiblebarriers.common.VisibleBarriersCommon;
 
-@Mod.EventBusSubscriber(modid=VisibleBarriersCommon.MOD_ID, value=net.minecraftforge.api.distmarker.Dist.CLIENT, bus=Mod.EventBusSubscriber.Bus.MOD)
 public class VisibleInput {
     private static KeyMapping keyVisibility, keyBarriers, keyLights, keyStructureVoids, keyBubbleColumns, keyFullBright, keyTime, keyZoom;
 
@@ -28,8 +25,14 @@ public class VisibleInput {
         keyFullBright = new KeyMapping("key.visiblebarriers.fullbright", InputConstants.Type.KEYSYM, GLFW.GLFW_KEY_M, "category.visiblebarriers");
         keyTime = new KeyMapping("key.visiblebarriers.time", InputConstants.UNKNOWN.getValue(), "category.visiblebarriers");
         keyZoom = new KeyMapping("key.visiblebarriers.zoom", InputConstants.Type.KEYSYM, GLFW.GLFW_KEY_Z, "category.visiblebarriers");
-        event.register(keyVisibility); event.register(keyBarriers); event.register(keyLights); event.register(keyStructureVoids);
-        event.register(keyBubbleColumns); event.register(keyFullBright); event.register(keyTime); event.register(keyZoom);
+        event.register(keyVisibility);
+        event.register(keyBarriers);
+        event.register(keyLights);
+        event.register(keyStructureVoids);
+        event.register(keyBubbleColumns);
+        event.register(keyFullBright);
+        event.register(keyTime);
+        event.register(keyZoom);
     }
 
     @SubscribeEvent
