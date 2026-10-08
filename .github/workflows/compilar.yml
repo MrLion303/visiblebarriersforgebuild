@@ -30,12 +30,22 @@ jobs:
           set -e
           curl -L --fail -o visiblebarriers-source.tar.gz "https://github.com/AmyMialeeMods/visiblebarriers/archive/0ad926196a21e8aa0a52404c9d6aeda475af67a9.tar.gz"
           tar -xzf visiblebarriers-source.tar.gz
+          upstream="visiblebarriers-0ad926196a21e8aa0a52404c9d6aeda475af67a9/src/main/resources"
           mkdir -p src/main/resources/assets
-          cp -R visiblebarriers-0ad926196a21e8aa0a52404c9d6aeda475af67a9/src/main/resources/assets/. src/main/resources/assets/
-          if [ -d "visiblebarriers-0ad926196a21e8aa0a52404c9d6aeda475af67a9/src/main/resources/resourcepacks" ]; then
-            cp -R visiblebarriers-0ad926196a21e8aa0a52404c9d6aeda475af67a9/src/main/resources/resourcepacks src/main/resources/
+          cp -R "$upstream/assets/." src/main/resources/assets/
+          if [ -d "$upstream/resourcepacks" ]; then
+            cp -R "$upstream/resourcepacks" src/main/resources/
           fi
-          cp visiblebarriers-0ad926196a21e8aa0a52404c9d6aeda475af67a9/src/main/resources/pack.mcmeta src/main/resources/ 2>/dev/null || true
+          if [ -f "$upstream/pack.mcmeta" ]; then
+            cp "$upstream/pack.mcmeta" src/main/resources/
+          fi
+          echo "Comprobando modelos y estados de bloque requeridos..."
+          test -f src/main/resources/assets/minecraft/blockstates/barrier.json
+          test -f src/main/resources/assets/minecraft/blockstates/light.json
+          test -f src/main/resources/assets/minecraft/blockstates/structure_void.json
+          test -f src/main/resources/assets/visiblebarriers/models/block/barrier.json
+          test -f src/main/resources/assets/visiblebarriers/models/block/light_00.json
+          test -f src/main/resources/assets/visiblebarriers/models/block/structure_void.json
           rm -rf visiblebarriers-* visiblebarriers-source.tar.gz forge-mdk.zip mdk
 
       - name: Compilar
