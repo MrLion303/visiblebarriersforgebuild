@@ -1,6 +1,7 @@
 package xyz.amymialee.visiblebarriers.mixin;
 
-import net.minecraft.world.entity.EntityType;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -9,9 +10,12 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(EntityType.Builder.class)
 public class EntityTypeMixin {
-    @Shadow private int clientTrackingRange;
-    @Inject(method = "clientTrackingRange", at = @At("RETURN"))
-    private void visibleBarriers$minTrackingRange(int range, CallbackInfoReturnable<EntityType.Builder<?>> cir) {
-        if (clientTrackingRange == 0) clientTrackingRange = 2;
+    @Shadow private int maxTrackingRange;
+
+    @Inject(method = "maxTrackingRange", at = @At("RETURN"))
+    public void visibleBarriers$minTrackingRange(int maxTrackingRange, CallbackInfoReturnable<EntityType.Builder<Entity>> cir) {
+        if (this.maxTrackingRange == 0) {
+            this.maxTrackingRange = 2;
+        }
     }
 }
