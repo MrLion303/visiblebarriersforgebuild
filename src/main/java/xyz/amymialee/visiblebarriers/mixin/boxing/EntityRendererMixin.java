@@ -1,12 +1,12 @@
 package xyz.amymialee.visiblebarriers.mixin.boxing;
 
-import net.minecraft.client.renderer.MultiBufferSource;
-import com.mojang.blaze3d.vertex.PoseStack;
-import net.minecraft.client.renderer.entity.EntityRenderer;
-import net.minecraft.client.renderer.entity.EntityRendererProvider;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
+import net.minecraft.client.render.VertexConsumerProvider;
+import net.minecraft.client.render.entity.EntityRenderer;
+import net.minecraft.client.render.entity.EntityRendererFactory;
+import net.minecraft.client.util.math.MatrixStack;
+import net.minecraft.entity.Entity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
@@ -16,24 +16,29 @@ import xyz.amymialee.visiblebarriers.VisibleBarriers;
 import xyz.amymialee.visiblebarriers.util.FloatyRenderer;
 
 @Mixin(EntityRenderer.class)
-public abstract class EntityRendererMixin<T extends Entity> {
+public class EntityRendererMixin<T extends Entity> {
     @Unique protected FloatyRenderer<T> floater;
 
     @Inject(method = "<init>", at = @At("TAIL"))
-    public void visibleBarriers$giveRenderer(EntityRendererProvider.Context context, CallbackInfo ci) {
-        this.floater = new FloatyRenderer<>(context.getItemRenderer(), Items.BARRIER.getDefaultInstance());
+    public void visibleBarriers$giveRenderer(EntityRendererFactory.Context context, CallbackInfo ci) {
+        this.floater = new FloatyRenderer<>(context.getItemRenderer(), Items.BARRIER.getDefaultStack());
     }
 
     @Inject(method = "render", at = @At("HEAD"))
-    protected void visibleBarriers$renderHead(T entity, float yaw, float tickDelta, PoseStack matrices, MultiBufferSource vertexConsumers, int light, CallbackInfo ci) {
+    protected void visibleBarriers$renderHead(T entity, float yaw, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, CallbackInfo ci) {
         if (VisibleBarriers.isVisibilityEnabled() && entity.isInvisible()) {
-            ItemStack stack = entity.getPickResult();
-            if (stack != null) {
-                if (!this.floater.getItem().is(stack.getItem())) this.floater.setItem(stack);
+            if (entity.getPickBlockStack() != null) {
+                ItemStack stack = entity.getPickBlockStack();
+                if (!this.floater.getItem().isOf(stack.getItem())) {
+                    this.floater.setItem(stack);
+                }
+                this.floater.render(entity, tickDelta, matrices, vertexConsumers, light);
             } else {
-                this.floater.setItem(Items.STRUCTURE_VOID.getDefaultInstance());
+                if (!this.floater.getItem().isOf(Items.STRUCTURE_VOID)) {
+                    this.floater.setItem(Items.STRUCTURE_VOID.getDefaultStack());
+                }
+                this.floater.render(entity, tickDelta, matrices, vertexConsumers, light);
             }
-            this.floater.render(entity, tickDelta, matrices, vertexConsumers, light);
         }
     }
 }
