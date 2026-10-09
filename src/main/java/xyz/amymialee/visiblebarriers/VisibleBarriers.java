@@ -5,20 +5,14 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.PistonExtensionBlock;
-import net.minecraft.block.enums.PistonType;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.nbt.NbtCompound;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
-import xyz.amymialee.visiblebarriers.common.VisibleBarriersCommon;
 
-import java.util.Objects;
 
 @Environment(EnvType.CLIENT)
 public class VisibleBarriers implements ClientModInitializer {
@@ -182,23 +176,6 @@ public class VisibleBarriers implements ClientModInitializer {
         zoomScroll -= amount;
         zoomScroll = MathHelper.clamp(zoomScroll, 0.01f, 1000);
         sendFeedback("visiblebarriers.feedback.zoom", "%.0f".formatted(10000f / (getZoomModifier() * 100)));
-    }
-
-    static {
-        ModelPredicateProviderRegistry.register(VisibleBarriersCommon.MOVING_PISTON_BLOCK_ITEM, new Identifier("sticky"), (stack, world, entity, seed) -> {
-            NbtCompound compound = stack.getSubNbt("BlockStateTag");
-            if (compound != null && Objects.equals(compound.getString(PistonExtensionBlock.TYPE.getName()), String.valueOf(PistonType.STICKY))) {
-                return 1.0F;
-            }
-            return 0.0F;
-        });
-        ModelPredicateProviderRegistry.register(VisibleBarriersCommon.BUBBLE_COLUMN_BLOCK_ITEM, new Identifier("drag"), (stack, world, entity, seed) -> {
-            NbtCompound compound = stack.getSubNbt("BlockStateTag");
-            if (compound != null && Objects.equals(compound.getString("drag"), "true")) {
-                return 1.0F;
-            }
-            return 0.0F;
-        });
     }
 
     public enum Weather {
