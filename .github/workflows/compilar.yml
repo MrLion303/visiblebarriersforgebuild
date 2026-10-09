@@ -3,7 +3,7 @@ name: Compilar Visible Barriers Fabric
 on:
   workflow_dispatch:
   push:
-    branches: [fabric-migration-in-progress]
+    branches: [main]
 
 jobs:
   build:
