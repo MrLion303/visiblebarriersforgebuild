@@ -1,13 +1,16 @@
 package xyz.amymialee.visiblebarriers.mixin;
 
-import net.minecraft.world.level.block.AirBlock;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.shapes.Shapes;
-import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.core.BlockPos;
-import net.minecraft.world.item.Items;
+import net.minecraft.block.AirBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.EntityShapeContext;
+import net.minecraft.block.ShapeContext;
+import net.minecraft.item.Items;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.util.shape.VoxelShape;
+import net.minecraft.util.shape.VoxelShapes;
+import net.minecraft.world.BlockView;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -16,18 +19,30 @@ import xyz.amymialee.visiblebarriers.mixin.boxing.BlockMixin;
 
 @Mixin(AirBlock.class)
 public abstract class AirBlockMixin extends BlockMixin {
-    @Inject(method = "getShape", at = @At("HEAD"), cancellable = true)
-    public void visibleBarriers$visibleOutlineShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context, CallbackInfoReturnable<VoxelShape> cir) {
-        if ((this.asItem() != Items.AIR && context.isHoldingItem(this.asItem())) || context == CollisionContext.empty()) {
-            cir.setReturnValue(Shapes.block());
+    @Override
+    public void visibleBarriers$isSideInvisible(BlockState state, BlockState stateFrom, Direction direction, CallbackInfoReturnable<Boolean> cir) {
+        if (stateFrom.isOf((Block) (Object) this)) {
+            cir.setReturnValue(true);
         }
     }
 
     @Override
-    public void visibleBarriers$getCollisionShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context, CallbackInfoReturnable<VoxelShape> cir) {
-        if (!(context instanceof net.minecraft.world.phys.shapes.EntityCollisionContext entityContext) ||
-            !(entityContext.getEntity() instanceof net.minecraft.world.entity.player.Player)) {
-            cir.setReturnValue(Shapes.empty());
+    public void visibleBarriers$isTranslucent(BlockState state, BlockView world, BlockPos pos, CallbackInfoReturnable<Boolean> cir) {
+        cir.setReturnValue(true);
+    }
+
+    @Inject(method = "getOutlineShape", at = @At(value = "HEAD"), cancellable = true)
+    public void visibleBarriers$visibleOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context, CallbackInfoReturnable<VoxelShape> cir) {
+        if ((this.asItem() != Items.AIR && context.isHolding(this.asItem())) || context == ShapeContext.absent()) {
+            cir.setReturnValue(VoxelShapes.fullCube());
+        }
+    }
+
+    @Override
+    public void visibleBarriers$getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context, CallbackInfoReturnable<VoxelShape> cir) {
+        boolean isPlayer = context instanceof EntityShapeContext entityContext && entityContext.getEntity() != null && entityContext.getEntity().isPlayer();
+        if (!isPlayer) {
+            cir.setReturnValue(VoxelShapes.empty());
         }
         super.visibleBarriers$getCollisionShape(state, world, pos, context, cir);
     }
