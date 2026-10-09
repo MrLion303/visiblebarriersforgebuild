@@ -4,8 +4,7 @@
   "package": "xyz.amymialee.visiblebarriers.mixin",
   "compatibilityLevel": "JAVA_17",
   "refmap": "visiblebarriers.refmap.json",
-  "mixins": [],
-  "client": [
+  "mixins": [
     "AirBlockMixin",
     "BubbleColumnBlockMixin",
     "EntityTypeMixin",
