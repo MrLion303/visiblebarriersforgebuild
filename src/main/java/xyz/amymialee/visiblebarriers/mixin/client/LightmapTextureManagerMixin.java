@@ -1,15 +1,19 @@
 package xyz.amymialee.visiblebarriers.mixin.client;
 
-import net.minecraft.client.renderer.LightTexture;
+import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
+import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
+import net.minecraft.client.render.LightmapTextureManager;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Redirect;
 import xyz.amymialee.visiblebarriers.VisibleBarriers;
 
-@Mixin(LightTexture.class)
+@Mixin(LightmapTextureManager.class)
 public class LightmapTextureManagerMixin {
-    @Redirect(method = "updateLightTexture", at = @At(value = "INVOKE", target = "java/lang/Double.floatValue()F"))
-    private float visibleBarriers$fullBright(Double number) {
-        return VisibleBarriers.isFullBrightEnabled() ? 255f : number.floatValue();
+    @WrapOperation(method = "update", at = @At(value = "INVOKE", target = "Ljava/lang/Double;floatValue()F", ordinal = 1))
+    private float visibleBarriers$fullBright(Double number, Operation<Float> original) {
+        if (VisibleBarriers.isFullBrightEnabled()) {
+            return 255f;
+        }
+        return original.call(number);
     }
 }
