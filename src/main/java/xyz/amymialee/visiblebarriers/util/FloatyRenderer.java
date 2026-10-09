@@ -1,28 +1,42 @@
 package xyz.amymialee.visiblebarriers.util;
 
-import net.minecraft.client.renderer.MultiBufferSource;
-import net.minecraft.client.renderer.entity.ItemRenderer;
-import net.minecraft.client.resources.model.BakedModel;
-import net.minecraft.client.renderer.texture.OverlayTexture;
-import com.mojang.blaze3d.vertex.PoseStack;
-import net.minecraft.world.item.ItemDisplayContext;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.Entity;
-import com.mojang.math.Axis;
+import net.minecraft.client.render.OverlayTexture;
+import net.minecraft.client.render.VertexConsumerProvider;
+import net.minecraft.client.render.item.ItemRenderer;
+import net.minecraft.client.render.model.BakedModel;
+import net.minecraft.client.render.model.json.ModelTransformationMode;
+import net.minecraft.client.util.math.MatrixStack;
+import net.minecraft.entity.Entity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.math.RotationAxis;
 
 public class FloatyRenderer<T extends Entity> {
     private final ItemRenderer renderer;
     private ItemStack stack;
 
-    public FloatyRenderer(ItemRenderer renderer, ItemStack stack) { this.renderer = renderer; this.stack = stack; }
-    public void render(T entity, float partialTick, PoseStack matrices, MultiBufferSource consumers, int light) {
-        matrices.pushPose();
-        BakedModel model = renderer.getModel(stack, entity.level(), null, entity.getId());
-        matrices.translate(0.0D, entity.getBbHeight() / 2.0D, 0.0D);
-        matrices.mulPose(Axis.YP.rotation(-((entity.tickCount + partialTick) * 8) / 20.0f));
-        renderer.render(stack, ItemDisplayContext.GROUND, false, matrices, consumers, light, OverlayTexture.NO_OVERLAY, model);
-        matrices.popPose();
+    public FloatyRenderer(ItemRenderer renderer, ItemStack stack) {
+        this.renderer = renderer;
+        this.stack = stack;
     }
-    public ItemStack getItem(){return stack;}
-    public void setItem(ItemStack stack){this.stack=stack;}
+
+    public void render(T entity, float g, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i) {
+        this.renderItem(this.stack, entity, g, matrixStack, vertexConsumerProvider, i);
+    }
+
+    public void renderItem(ItemStack stack, T entity, float g, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i) {
+        matrixStack.push();
+        BakedModel bakedModel = this.renderer.getModel(stack, entity.getWorld(), null, entity.getId());
+        matrixStack.translate(0.0D, entity.getHeight() / 2, 0.0D);
+        matrixStack.multiply(RotationAxis.POSITIVE_Y.rotation(-((entity.age + g) * 8) / 20.0f));
+        this.renderer.renderItem(stack, ModelTransformationMode.GROUND, false, matrixStack, vertexConsumerProvider, i, OverlayTexture.DEFAULT_UV, bakedModel);
+        matrixStack.pop();
+    }
+
+    public ItemStack getItem() {
+        return this.stack;
+    }
+
+    public void setItem(ItemStack stack) {
+        this.stack = stack;
+    }
 }
