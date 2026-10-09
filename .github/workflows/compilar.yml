@@ -40,38 +40,7 @@ jobs:
             cp "$upstream/pack.mcmeta" src/main/resources/
           fi
 
-          echo "Generando textura roja translúcida para las barreras..."
-          python3 - <<'PY'
-          import os
-          import struct
-          import zlib
-
-          width = height = 16
-          rows = []
-          for y in range(height):
-              row = bytearray([0])
-              for x in range(width):
-                  edge = x in (0, 15) or y in (0, 15)
-                  if edge:
-                      row.extend((190, 0, 0, 112))
-                  else:
-                      row.extend((255, 24, 24, 88))
-              rows.append(bytes(row))
-
-          def chunk(kind, data):
-              return (struct.pack(">I", len(data)) + kind + data +
-                      struct.pack(">I", zlib.crc32(kind + data) & 0xffffffff))
-
-          png = (b"\x89PNG\r\n\x1a\n" +
-                 chunk(b"IHDR", struct.pack(">2I5B", width, height, 8, 6, 0, 0, 0)) +
-                 chunk(b"IDAT", zlib.compress(b"".join(rows), 9)) +
-                 chunk(b"IEND", b""))
-          target = "src/main/resources/assets/visiblebarriers/textures/block/barrier.png"
-          os.makedirs(os.path.dirname(target), exist_ok=True)
-          with open(target, "wb") as texture:
-              texture.write(png)
-          print(f"Textura creada: {target} ({width}x{height}, rojo con alfa bajo)")
-          PY
+          echo "Usando las texturas originales del mod Visible Barriers..."
 
           echo "Comprobando modelos y estados de bloque requeridos..."
           test -f src/main/resources/assets/minecraft/blockstates/barrier.json
