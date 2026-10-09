@@ -1,22 +1,24 @@
 package xyz.amymialee.visiblebarriers.mixin;
 
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Marker;
-import net.minecraft.world.level.Level;
-import net.minecraft.network.protocol.Packet;
-import net.minecraft.network.protocol.game.ClientboundAddEntityPacket;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.MarkerEntity;
+import net.minecraft.network.packet.Packet;
+import net.minecraft.network.packet.s2c.play.EntitySpawnS2CPacket;
+import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-@Mixin(Marker.class)
+@Mixin(MarkerEntity.class)
 public abstract class MarkerEntityMixin extends Entity {
-    protected MarkerEntityMixin(EntityType<?> type, Level level) { super(type, level); }
+    public MarkerEntityMixin(EntityType<?> type, World world) {
+        super(type, world);
+    }
 
-    @Inject(method = "getAddEntityPacket", at = @At("HEAD"), cancellable = true)
-    private void visibleBarriers$forcePacket(CallbackInfoReturnable<Packet<?>> cir) {
-        cir.setReturnValue(new ClientboundAddEntityPacket((Marker)(Object)this));
+    @Inject(method = "createSpawnPacket", at = @At("HEAD"), cancellable = true)
+    public void visibleBarriers$forcePacket(CallbackInfoReturnable<Packet<?>> cir) {
+        cir.setReturnValue(new EntitySpawnS2CPacket((MarkerEntity)((Object)this)));
     }
 }
