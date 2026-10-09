@@ -12,13 +12,16 @@
     "PistonExtensionBlockMixin",
     "boxing.AbstractBlockMixin",
     "boxing.BlockMixin",
-    "boxing.WorldMixin",
+    "boxing.WorldMixin"
+  ],
+  "client": [
     "boxing.EntityRendererMixin",
     "client.AbstractBlockStateMixin",
     "client.ClientBubbleColumnBlockMixin",
     "client.ClientPistonExtensionBlockMixin",
     "client.ClientPlayerInteractionManagerMixin",
     "client.ClientWorldMixin",
+    "client.ClientWorldMixin$ClientWorldPropertiesMixin",
     "client.EntityMixin",
     "client.GameRendererMixin",
     "client.ItemStackMixin",
