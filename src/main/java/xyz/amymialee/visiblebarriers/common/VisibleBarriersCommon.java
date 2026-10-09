@@ -1,19 +1,25 @@
 package xyz.amymialee.visiblebarriers.common;
 
-import com.mojang.logging.LogUtils;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraftforge.eventbus.api.IEventBus;
+import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-public class VisibleBarriersCommon {
+public class VisibleBarriersCommon implements ModInitializer {
     public static final String MOD_ID = "visiblebarriers";
-    public static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+    public static final Identifier MOD_INSTALLED_PACKET = id("mod_installed");
 
-    public static void init(IEventBus modBus) {
-        // El mod no registra ítems ni añade contenido a las pestañas creativas.
+    @Override
+    public void onInitialize() {
+        ServerPlayNetworking.registerGlobalReceiver(MOD_INSTALLED_PACKET, (server, player, handler, buf, responseSender) -> {
+            LOGGER.info("{} has mod Visible Barriers installed.", player.getEntityName());
+            ServerPlayNetworking.send(player, MOD_INSTALLED_PACKET, buf);
+        });
     }
 
-    public static ResourceLocation id(String path) {
-        return new ResourceLocation(MOD_ID, path);
+    public static Identifier id(String... path) {
+        return new Identifier(MOD_ID, String.join(".", path));
     }
 }
