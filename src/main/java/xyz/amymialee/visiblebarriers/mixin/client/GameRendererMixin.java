@@ -1,6 +1,6 @@
 package xyz.amymialee.visiblebarriers.mixin.client;
 
-import net.minecraft.client.renderer.GameRenderer;
+import net.minecraft.client.render.GameRenderer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -10,13 +10,12 @@ import xyz.amymialee.visiblebarriers.VisibleBarriers;
 
 @Mixin(GameRenderer.class)
 public class GameRendererMixin {
-    @Shadow private float oldFov;
-    @Shadow private float fov;
-    @Inject(method = "tickFov", at = @At("TAIL"))
+    @Shadow private float fovMultiplier;
+
+    @Inject(method = "updateFovMultiplier", at = @At(value = "TAIL"))
     private void visibleBarriers$zoom(CallbackInfo ci) {
         if (VisibleBarriers.isHoldingZoom()) {
-            oldFov *= VisibleBarriers.getZoomModifier();
-            fov *= VisibleBarriers.getZoomModifier();
+            this.fovMultiplier *= VisibleBarriers.getZoomModifier();
         }
     }
 }
